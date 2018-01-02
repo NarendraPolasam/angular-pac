@@ -1,0 +1,29 @@
+{
+  "name": "iaeanarenmodule",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundles/iaeanarenmodule.umd.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.js.map dist/LICENCE dist/README.md",
+    "package": "rollup -c",
+    "minify": "uglifyjs dist/bundles/iaeanarenmodule.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/iaeanarenmodule.umd.min.js",
+    "build": "npm run cleanup && ngc && npm run package && npm run minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@angular/compiler": "^5.1.2",
+    "@angular/compiler-cli": "^5.1.2",
+    "rimraf": "^2.6.2",
+    "rollup": "^0.53.1",
+    "typescript": "^2.6.2",
+    "uglify-js": "^3.3.3"
+  },
+  "dependencies": {
+    "@angular/core": "^5.1.2",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.5.6",
+    "zone.js": "^0.8.14"
+  }
+}

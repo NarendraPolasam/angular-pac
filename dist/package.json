@@ -1,0 +1,19 @@
+{
+    "name": "iaeanarenmodule",
+    "version": "1.0.0",
+    "description": "module for Angular.",
+    "main": "bundles/iaeanarenmodule.umd.js",
+    "module": "index.js",
+    "typings": "index.d.ts",
+    "keywords": [
+      
+      "angular5"
+    ],
+    "author": "narendra",
+    "license": "MIT",
+    
+    "peerDependencies": {
+      "@angular/core": "^5.1.2",
+      "rxjs": "^5.0.1"
+    }
+  }
